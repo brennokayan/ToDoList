@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    color: white;
+    background-color: #161623;
+
 }
 @media (min-width: 320px) {
     * {
@@ -32,16 +34,24 @@ button{
     outline: none;
     cursor: pointer;
     background-color: #0998ff;
-    color: white;
 }
 
 button:hover{
     background-color: #0e7eff;
 }
+
 button:disabled{
     background-color: #ccc;
     color: #666;
     cursor: not-allowed;
+}
+input, select {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    color: white;
 }
 .formAdd {
     display: flex;
@@ -71,7 +81,8 @@ button:disabled{
 .minha-lista li {
     width: 80%;
     padding: 0.5em;
-    border: 1px solid #111;
+    border: 1px solid #fff;
+    background-color: rgba(255,255,255,.2);
     border-radius: 5px;
     outline: none;
     list-style: none;
@@ -86,6 +97,7 @@ button:disabled{
     align-items: center;
     justify-content: space-around;
     gap: 8px;
+    background-color: transparent;
     flex-direction: row;
 
 }
@@ -119,5 +131,6 @@ button:disabled{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-
+    background-color: transparent;
 }
+
