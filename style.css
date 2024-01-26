@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+@media (min-width: 320px) {
+    * {
+        font-size: 8px;
+    }
+    
+}
+@media (min-width: 768px) {
+    * {
+        font-size: 10px;
+    }
+    
+}
+@media (min-width: 1024px) {
+    * {
+        font-size: 14px;
+    }
+    
+}
+button{
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: #0998ff;
+    color: white;
+}
+
+button:hover{
+    background-color: #0e7eff;
+}
+button:disabled{
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+.formAdd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 1em;
+}
+.formAdd input, select {
+    width: 80%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+.minha-lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /* background-color: red; */
+}
+.minha-lista li {
+    width: 80%;
+    padding: 0.5em;
+    border: 1px solid #111;
+    border-radius: 5px;
+    outline: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.minha-lista li .divButtons {
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+    flex-direction: row;
+
+}
+.minha-lista li .divButtons  .btnConcluir {
+    background-color: #248032;
+    color: white;
+
+}
+.minha-lista li .divButtons  .btnConcluir:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+
+}
+.minha-lista li .divButtons  .btnApagar {
+    background-color: #aa0909;
+    color: white;
+
+}
+.minha-lista li .divButtons  .btnApagar:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+
+}
+
+
+.minha-lista li div {
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
